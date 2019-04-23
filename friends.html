@@ -10,7 +10,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <title>More | kakao Clone</title>
+    <title>Freinds | kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -27,25 +27,46 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">More</h1>
+        <h1 class="header__title">Freinds</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-qrcode"></i>
-        </span>
-        <span class="header__icon">
-          <a href="settings.html">
-            <i class="fas fa-cog"></i>
-          </a>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-    <main class="more">
-      <header class="more__header">
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend friend--lg">
+          <div class="friedn__column">
+            <img
+              class="g-avatar friend__avatar friend--lg"
+              src="images/avatar.png"
+            />
+            <div class="friend__content">
+              <span class="friend__name">Quokka</span>
+              <span class="friend__status"> holding on to gravity </span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
+          <div class="friend__column">
+            <img class="g-avatar friend__avatar" src="images/avatar.png" />
+            <div class="friend__content">
+              <span class="friend__name">Plus Friend</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 30</h5>
+        <li class="friends__friend friend">
           <div class="friend__column">
             <img
               class="g-avatar friend__avatar friend--lg"
@@ -53,64 +74,28 @@
             />
             <div class="friend__content">
               <span class="friend__name">rebecca</span>
-              <span class="friend__status">
-                grinquokka@gmail.com
-              </span>
+              <span class="friend__status"> seaside </span>
             </div>
           </div>
           <div class="friend__column">
-            <i class="far fa-comment-alt"></i>
+            <div class="friend__now-listening">
+              <span>seaside-Kooks</span>
+              <i class="fas fa-play"></i>
+            </div>
           </div>
-        </div>
-        <ul class="more__btn-list">
-          <li class="more__btn">
-            <span class="more__btn-icon">
-              <i class="far fa-smile fa-2x"></i>
-            </span>
-            <span class="more__btn-title">Emoticons</span>
-          </li>
-          <li class="more__btn">
-            <span class="more__btn-icon">
-              <i class="fas fa-brush fa-2x"></i>
-            </span>
-            <span class="more__btn-title">Themes</span>
-          </li>
-          <li class="more__btn">
-            <span class="more__btn-icon">
-              <i class="fab fa-kickstarter-k fa-2x"></i>
-            </span>
-            <span class="more__btn-title">Account</span>
-          </li>
-        </ul>
-      </header>
-      <section class="more__suggestions">
-        <h5 class="more__title">Suggestion</h5>
-        <ul class="more__suggestions-list">
-          <li class="more__suggestion suggestion">
-            <i class="fas fa-quote-right fa-2x"></i>
-            <span class="suggestion__title">Story</span>
-          </li>
-          <li class="more__suggestion suggestion">
-            <i class="fas fa-beer fa-2x"></i>
-            <span class="suggestion__title">Friends</span>
-          </li>
-          <li class="more__suggestion suggestion">
-            <i class="fas fa-gamepad fa-2x"></i>
-            <span class="suggestion__title">Gem</span>
-          </li>
-        </ul>
-      </section>
+        </li>
+      </ul>
     </main>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <i class="fas fa-comment"></i>
+            <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
