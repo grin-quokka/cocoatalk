@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">14:35</span>
@@ -42,22 +42,32 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, April 24, 2019</span>
         <li class="incoming-message message">
           <img src="images/avatar.png" class="m-avatar message__avatar" />
           <div class="message__content">
+            <span class="message__bubble">Hello :)</span>
             <span class="message__author">uj</span>
-            <div class="message__bubble">Hello :)</div>
           </div>
-          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">Hi there :D</span>
+          </div>
         </li>
         <li class="incoming-message message">
+          <img src="images/avatar.png" class="m-avatar message__avatar" />
           <div class="message__content">
-            <div class="message__bubble">Hi there :D</div>
+            <span class="message__bubble">how r u?</span>
+            <span class="message__author">uj</span>
           </div>
-          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">soooo good</span>
+          </div>
         </li>
       </ul>
     </main>
