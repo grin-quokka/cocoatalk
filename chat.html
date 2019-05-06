@@ -14,34 +14,36 @@
     <title>Chat | kakao Clone</title>
   </head>
   <body class="chats-body">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">14:35</span>
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">14:35</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="far fa-clock"></i>
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">52%</span>
+          <i class="fas fa-battery-half"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-up"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">52%</span>
-        <i class="fas fa-battery-half"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Chat</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        <h1 class="header__title">Chat</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
     <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, April 24, 2019</span>
@@ -69,20 +71,26 @@
             <span class="message__bubble">soooo good</span>
           </div>
         </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">XD</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/avatar.png" class="m-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__bubble">nice '3'</span>
+            <span class="message__author">uj</span>
+          </div>
+        </li>
       </ul>
     </main>
-    <div class="chat__write">
-      <div class="chat__write-column">
+    <div class="chat__write--container">
+      <input type="text" placeholder="Send message" class="chat__write" />
+      <div class="chat__icon chat__icon-left">
         <i class="far fa-plus-square"></i>
       </div>
-      <div class="chat__write-column">
-        <input
-          type="text"
-          placeholder="Send message"
-          class="chat__write-input"
-        />
-      </div>
-      <div class="chat__write-column">
+      <div class="chat__icon chat__icon-right">
         <span class="chat__write-icon">
           <i class="far fa-smile-wink"></i>
         </span>
